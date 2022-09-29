@@ -1,15 +1,15 @@
 <template>
   <div>
-    <label>路由-404</label>
+    <label>路由-登录P2</label>
   </div>
 </template>
 
 <style scoped>
 div {
-  background-color: aqua;
+  background-color: cornflowerblue;
   margin: auto;
-  height: 95%;
-  width: 95%;
+  height: 100%;
+  width: 100%;
   color: white;
 }
 </style>

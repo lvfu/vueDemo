@@ -10,7 +10,7 @@
 <!--2.修改 main.js 下router配置 -->
 <style scoped>
 div {
-  background-color: blue;
+  background-color: antiquewhite;
   height: 100vh;
   color: white;
 }
