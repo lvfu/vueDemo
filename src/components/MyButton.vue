@@ -1,13 +1,10 @@
 <template>
-  <div class="primary small"></div>
+  <div class="button" :class="[type, size]"><slot></slot></div>
 </template>
 
 <script>
 const options = {
-  data: function () {
-    return {}
-  },
-  methods: {},
+  props: ['type', 'size'],
 }
 
 export default options
@@ -51,5 +48,9 @@ export default options
   font-size: 18px;
   line-height: 30px;
   border-radius: 30px;
+}
+
+.button {
+  text-align: center;
 }
 </style>

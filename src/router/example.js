@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import NotFoundView from '@/views/router/RouterFour.vue'
+import LoginView from '@/views/router/RouterLogin.vue'
 
 Vue.use(VueRouter)
 
@@ -8,13 +9,12 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView,
+    component: LoginView,
   },
   {
-    path: '/about',
-    name: 'about',
-    component: () =>
-      import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
+    path: '/404',
+    name: '404',
+    component: NotFoundView,
   },
 ]
 
