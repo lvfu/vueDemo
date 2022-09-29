@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>组件示例</h1>
+    <h1>组件示例1</h1>
     <my-button></my-button>
   </div>
 </template>
