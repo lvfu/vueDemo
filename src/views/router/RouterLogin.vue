@@ -1,7 +1,11 @@
 <template>
   <div>
     <el-container>
-      <el-header>Header</el-header>
+      <el-header>
+        <el-button type="primary" @click="jump('/l/p1')">P1</el-button>
+        <el-button type="primary" @click="jump('/l/p2')">P2</el-button>
+        <el-button type="primary" @click="jump('/l/p3')">P3</el-button>
+      </el-header>
       <el-container>
         <el-aside width="200px">
           <router-link to="/l/p1">P1</router-link>
@@ -15,6 +19,18 @@
     </el-container>
   </div>
 </template>
+
+<script>
+const options = {
+  methods: {
+    jump(url) {
+      this.$router.push(url)
+    },
+  },
+}
+
+export default options
+</script>
 
 <style lang="less" scoped>
 div {
